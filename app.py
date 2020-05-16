@@ -20,10 +20,9 @@ def home():
 def aboutme():
     return render_template("aboutme.html")
 
-@app.route("/columbia")
-def columbia():
-    return "Columbia!"
-
+@app.route("/classes")
+def classes():
+    return render_template("classes.html")
 
 #start the server
 if __name__ == "__main__":
